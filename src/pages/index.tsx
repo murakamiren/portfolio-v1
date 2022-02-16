@@ -1,11 +1,27 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useState } from "react";
 import tw, { css } from "twin.macro";
 
 const Home: NextPage = () => {
+	const [isDark, setIsDark] = useState(true);
+
+	const handleIsDark = () => {
+		setIsDark((pre) => !pre);
+	};
+
 	const text = css`
 		${tw`font-bold text-5xl text-red-500`}
-		background-color: #333;
+		background-color: ${isDark ? "#333" : "skyblue"};
+	`;
+
+	const btn = css`
+		${tw`w-[160px] h-[40px] rounded-xl border`}
+		background-color: ${isDark ? "#333" : "#fff"};
+		button {
+			${tw`block w-full h-full font-bold`}
+			color: ${isDark ? "#fff" : "#333"};
+		}
 	`;
 	return (
 		<div>
@@ -16,6 +32,9 @@ const Home: NextPage = () => {
 			</Head>
 
 			<p css={text}>aaaaaa</p>
+			<div css={btn}>
+				<button onClick={handleIsDark}>{isDark ? "dark" : "light"}</button>
+			</div>
 		</div>
 	);
 };

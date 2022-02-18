@@ -2,8 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
 import tw, { css } from "twin.macro";
-import Footer from "~/components/Organisms/Footer";
-import Header from "~/components/Organisms/Header";
+import MainVisual from "~/components/Organisms/MainVisual";
 import Layout from "~/components/Templates/Layout";
 
 const Home: NextPage = () => {
@@ -35,6 +34,7 @@ const Home: NextPage = () => {
 			</Head>
 
 			<Layout>
+				<MainVisual />
 				<p css={text}>aaaaaa</p>
 				<div css={btn}>
 					<button onClick={handleIsDark}>{isDark ? "dark" : "light"}</button>

@@ -3,9 +3,9 @@ import Layout from "~/components/Templates/Layout";
 
 const About: NextPage = () => {
 	return (
-		<Layout>
+		<div>
 			<p>this is about</p>
-		</Layout>
+		</div>
 	);
 };
 

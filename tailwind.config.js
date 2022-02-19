@@ -6,6 +6,7 @@ module.exports = {
 			colors: {
 				primary: "#F6E012",
 				mainBlack: "#323232",
+				darkBg: "#1C1C1C",
 			},
 
 			fill: (theme) => ({

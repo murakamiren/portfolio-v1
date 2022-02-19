@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import tw, { css } from "twin.macro";
-import About from "~/components/Organisms/About";
-import MainVisual from "~/components/Organisms/MainVisual";
-import Layout from "~/components/Templates/Layout";
+import About from "~/components/Organisms/Home/About";
+import Contact from "~/components/Organisms/Home/Contact";
+import Works from "~/components/Organisms/Home/Works";
+import MainVisual from "~/components/Organisms/Home/MainVisual";
 
 const Home: NextPage = () => {
 	return (
@@ -14,10 +14,10 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Layout>
-				<MainVisual />
-				<About />
-			</Layout>
+			<MainVisual />
+			<About />
+			<Works />
+			<Contact />
 		</div>
 	);
 };

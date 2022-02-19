@@ -15,7 +15,7 @@ const Layout: VFC<layoutProps> = ({ children }) => {
 	const [darkClass, setDarkClass] = useState("");
 
 	const bgWrap = css`
-		${tw`bg-white dark:bg-mainBlack`}
+		${tw`bg-white dark:bg-darkBg`}
 	`;
 
 	useToggleIsDarkFromOS();

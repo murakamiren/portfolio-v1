@@ -3,6 +3,7 @@ import { useRecoilValue } from "recoil";
 import tw, { css } from "twin.macro";
 import { useToggleIsDarkFromOS } from "~/hooks/useToggleIsDarkFromOS";
 import { isDarkAtom } from "~/recoil/atoms/isDarkAtom";
+import ScrollToTopIcon from "../atoms/ScrollToTopIcon";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 
@@ -34,6 +35,7 @@ const Layout: VFC<layoutProps> = ({ children }) => {
 		<Fragment>
 			<div className={darkClass}>
 				<div css={bgWrap}>
+					<ScrollToTopIcon />
 					<Header />
 					<main>{children}</main>
 					<Footer />

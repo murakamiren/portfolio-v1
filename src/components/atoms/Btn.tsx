@@ -15,7 +15,7 @@ const Btn: VFC<BtnProps> = (props) => {
 			${tw`w-full h-full block text-mainBlack text-base`}
 		}
 		a {
-			${tw`w-full h-full block px-8 py-3`}
+			${tw`w-full h-full block px-7 py-2`}
 		}
 	`;
 	return (

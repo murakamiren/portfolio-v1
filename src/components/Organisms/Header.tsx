@@ -21,7 +21,7 @@ const Header: VFC = () => {
 	`;
 
 	const navList = css`
-		${tw`flex h-full gap-16 text-xl items-center justify-end`}
+		${tw`flex h-full gap-10 text-base items-center justify-end`}
 		li {
 			${tw`text-mainBlack dark:text-white hover:text-primary transition duration-500 ease-out`}
 			a {

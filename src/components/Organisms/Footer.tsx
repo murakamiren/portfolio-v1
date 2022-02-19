@@ -7,7 +7,7 @@ const Footer: VFC = () => {
 		p {
 			${tw`text-center`}
 			small {
-				${tw`text-sm`}
+				${tw`text-sm dark:text-white`}
 			}
 		}
 	`;

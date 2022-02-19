@@ -11,7 +11,7 @@ const About: VFC = () => {
 	`;
 
 	const ttl = css`
-		${tw`font-semibold mt-28`}
+		${tw`font-semibold mt-28 dark:text-white`}
 		font-size: 2rem;
 		font-size: clamp(2rem, 1.35rem + 2.6666666666666665vw, 3.75rem);
 	`;

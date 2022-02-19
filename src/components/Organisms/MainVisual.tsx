@@ -3,7 +3,7 @@ import tw, { css } from "twin.macro";
 
 const MainVisual: VFC = () => {
 	const mvWrap = css`
-		${tw`w-screen h-screen bg-white flex flex-col justify-center items-center`}
+		${tw`w-screen h-screen flex flex-col justify-center items-center`}
 		h1 {
 			${tw`font-semibold text-primary letter-spacing[0.12em]`}
 			font-size: 3rem;

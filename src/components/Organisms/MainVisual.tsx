@@ -3,14 +3,16 @@ import tw, { css } from "twin.macro";
 
 const MainVisual: VFC = () => {
 	const mvWrap = css`
-		${tw`w-screen h-screen pt-[80px] bg-red-300`}
-		p {
-			${tw`place-items-center`}
+		${tw`w-screen h-screen bg-white flex flex-col justify-center items-center`}
+		h1 {
+			${tw`font-semibold text-primary letter-spacing[0.12em]`}
+			font-size: 3rem;
+			font-size: clamp(3rem, 1.8857142857142857rem + 4.571428571428571vw, 6rem);
 		}
 	`;
 	return (
 		<div css={mvWrap}>
-			<p>hello</p>
+			<h1>just simplify.</h1>
 		</div>
 	);
 };

@@ -6,8 +6,8 @@ const MainVisual: VFC = () => {
 		${tw`w-screen h-screen flex flex-col justify-center items-center`}
 		h1 {
 			${tw`font-semibold text-primary letter-spacing[0.12em]`}
-			font-size: 3rem;
-			font-size: clamp(3rem, 1.8857142857142857rem + 4.571428571428571vw, 6rem);
+			font-size: 1.5rem;
+			font-size: clamp(1.5rem, 0.9428571428571428rem + 2.2857142857142856vw, 3rem);
 		}
 	`;
 	return (

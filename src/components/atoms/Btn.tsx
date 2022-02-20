@@ -10,12 +10,18 @@ type BtnProps = {
 
 const Btn: VFC<BtnProps> = (props) => {
 	const wrap = css`
-		${tw`w-auto h-auto bg-primary rounded shadow`}
+		${tw`w-auto h-auto`}
 		button {
-			${tw`w-full h-full block text-mainBlack text-base`}
+			${tw`w-full h-full block text-mainBlack dark:text-white text-base hover:text-primary`}
 		}
 		a {
-			${tw`w-full h-full block px-7 py-2`}
+			${tw`w-full h-full relative inline-block`}
+			&::after {
+				${tw`absolute bottom-0 left-0 content w-full h-0.5 bg-primary scale-x-0 scale-y-100 origin-top-left transition duration-500 ease-out`}
+			}
+			&:hover::after {
+				${tw`scale-x-100`}
+			}
 		}
 	`;
 	return (
@@ -25,7 +31,6 @@ const Btn: VFC<BtnProps> = (props) => {
 			initial={{ y: 100, opacity: 0 }}
 			whileInView={{ y: 0, opacity: 1 }}
 			viewport={{ once: true }}
-			whileHover={{ scale: 1.05, opacity: 0.8 }}
 		>
 			<button>
 				<Link href={props.link}>{props.txt}</Link>

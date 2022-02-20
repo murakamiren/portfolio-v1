@@ -25,7 +25,7 @@ const Contact: VFC = () => {
 		ul {
 			${tw`flex justify-center gap-6`}
 			li {
-				${tw`text-4xl text-mainBlack dark:text-white hover:text-primary transition duration-500 ease-out`}
+				${tw`text-3xl text-mainBlack dark:text-white hover:text-primary transition duration-500 ease-out`}
 			}
 		}
 	`;

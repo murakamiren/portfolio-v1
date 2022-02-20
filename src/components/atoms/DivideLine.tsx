@@ -4,7 +4,7 @@ import tw, { css } from "twin.macro";
 
 const DivideLine: VFC = () => {
 	const line = css`
-		${tw`w-[70px] h-0.5 bg-primary`}
+		${tw`w-10 h-0.5 bg-primary`}
 	`;
 	return (
 		<motion.div

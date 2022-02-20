@@ -67,7 +67,7 @@ const Header: VFC = () => {
 							<Link href="/works">works.</Link>
 						</motion.li>
 						<motion.li variants={item}>
-							<Link href="/contact">contact.</Link>
+							<Link href="/">contact.</Link>
 						</motion.li>
 						<motion.li onClick={handleIsDark} variants={item}>
 							{isDark ? <MdDarkMode /> : <MdLightMode />}

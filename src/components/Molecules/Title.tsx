@@ -9,7 +9,7 @@ type titleProps = {
 
 const Title: VFC<titleProps> = (props) => {
 	const ttl = css`
-		${tw`text-mainBlack dark:text-white mt-36 mb-8`}
+		${tw`text-mainBlack dark:text-white mt-32 mb-4`}
 		font-size: 1.5rem;
 		font-size: clamp(1.5rem, 1.3142857142857143rem + 0.7619047619047619vw, 2rem);
 	`;

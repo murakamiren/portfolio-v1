@@ -30,7 +30,7 @@ const Contact: VFC = () => {
 		}
 	`;
 	return (
-		<div>
+		<div id="contact">
 			<div css={wrap}>
 				<Title ttl="contact." />
 				<p css={email}>

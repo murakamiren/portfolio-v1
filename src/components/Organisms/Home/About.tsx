@@ -23,7 +23,7 @@ const About: VFC = () => {
 	`;
 
 	return (
-		<div css={content}>
+		<div css={content} id="content">
 			<div css={wrap}>
 				<Title ttl="about." />
 				<div css={descWrap}>

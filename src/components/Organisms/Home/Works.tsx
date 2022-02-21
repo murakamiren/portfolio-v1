@@ -22,7 +22,7 @@ const Works: VFC = () => {
 	`;
 
 	return (
-		<div>
+		<div id="works">
 			<div css={wrap}>
 				<Title ttl="recent works." />
 				<div css={worksWrap}>
